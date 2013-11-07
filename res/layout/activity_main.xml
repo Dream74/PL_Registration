@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:ems="10">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/editText1"
+            android:textSize="40sp"
+            android:layout_marginTop="20dp"
+            android:text="簽到" />
+
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="40sp"
+        android:text="簽到名單"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+    <ListView  
+        android:layout_height="fill_parent"
+    	android:layout_width="fill_parent"
+    	android:id="@+id/listView"/>        
+</LinearLayout>
+
